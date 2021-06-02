@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 20px;
+}
+
+.overlay {
+    position : absolute;
+    top : 0 ;
+    left : 0 ;
+    right : 0 ;
+    bottom : 0 ;
+    background : rgba (100, 100, 100, 0.4)
+}
+
+.modal {
+    width : 375px ;
+    margin : 15% auto auto;
+    position : relative;
+    text-align : center;
+    background : #fff ;
+    border : 1px solid #778 ;
+    border-radius : 5px ;
+    padding : 30px 20px ;
+}
+
+.modal-close {
+    position : absolute;
+    right : 15px ;
+    top : 5px ;
+    cursor : pointer;
+}
+
+.hidden {
+    display : none;
+}
+
+
+/* directory */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+/* employee cards */
+
+.card {
+    display: flex;
+    border: 2PX solid #dfdfdf;
+    border-radius: 8px;
+}
+
+/* pic */
+.avatar {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* text boxs */
+.text-container {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.text-container h2,
+.text-container p {
+    margin: 0;
+}
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal-close {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50%;
+}
