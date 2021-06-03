@@ -4,7 +4,6 @@
 
 body {
     position: relative;
-    margin: 20px;
 }
 
 .overlay {
@@ -13,9 +12,13 @@ body {
     left : 0 ;
     right : 0 ;
     bottom : 0 ;
-    background : rgba (100, 100, 100, 0.4)
+    background : rgba(100, 100, 100, 0.6)
+    
 }
 
+.title {
+    margin-left: 20px;
+}
 .modal {
     width : 375px ;
     margin : 15% auto auto;
@@ -43,8 +46,10 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -54,6 +59,8 @@ body {
     display: flex;
     border: 2PX solid #dfdfdf;
     border-radius: 8px;
+    justify-content: center;
+    max-width: 550px;
 }
 
 /* pic */
@@ -64,7 +71,7 @@ body {
 
 /* text boxs */
 .text-container {
-    margin-left: 10px;
+    padding-left: 10px;
     align-self: center;
 }
 
@@ -80,4 +87,22 @@ body {
 .modal-close {
     font-family: 'Courier New', Courier, monospace;
     border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
